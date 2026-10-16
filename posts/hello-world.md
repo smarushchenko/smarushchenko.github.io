@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Привет, мир!"
+---
+
 # Привет, мир!
 
 [← На главную](/)
@@ -11,7 +16,6 @@
 </pre>
 
 <script type="module">
-    import mermaid from 'https://jsdelivr.net';
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
     mermaid.initialize({ startOnLoad: true });
 </script>
-
