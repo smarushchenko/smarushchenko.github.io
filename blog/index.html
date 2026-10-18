@@ -1,0 +1,23 @@
+---
+layout: default
+title: "Блог"
+---
+
+<h1>Блог</h1>
+
+{% assign categories_order = "tech,personal,thoughts" | split: "," %}
+{% for cat in categories_order %}
+  {% assign posts = site.categories[cat] %}
+  {% if posts.size > 0 %}
+    {% assign cat_name = site.data.categories[cat] | default: cat %}
+    <h2>{{ cat_name }}</h2>
+    <ul>
+      {% for post in posts %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <small>— {{ post.date | date: "%d.%m.%Y" }}</small>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endfor %}

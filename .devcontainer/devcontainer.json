@@ -1,0 +1,19 @@
+{
+  "name": "Jekyll Dev",
+  "image": "jekyll/jekyll:pages",
+  "workspaceFolder": "/srv/jekyll",
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/srv/jekyll,type=bind"
+  ],
+  "forwardPorts": [4000, 35729],
+  "postCreateCommand": "bundle install",
+  "postAttachCommand": "bundle exec jekyll serve --host 0.0.0.0 --livereload",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "yzhang.markdown-all-in-one",
+        "bierner.markdown-mermaid"
+      ]
+    }
+  }
+}

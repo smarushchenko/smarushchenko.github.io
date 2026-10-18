@@ -1,0 +1,6 @@
+- title: "Главная"
+  url: "/"
+- title: "Опыт работы"
+  url: "/employment_history/"
+- title: "Блог"
+  url: "/blog/"

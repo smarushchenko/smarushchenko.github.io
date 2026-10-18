@@ -1,4 +1,28 @@
-title: "Мой Блог"
-remote_theme: pages-themes/cayman@v0.2.0
-plugins:
-  - jekyll-remote-theme
+# Основные настройки сайта
+title: "Блог Сергея Марущенко"
+description: "Персональный сайт: резюме и блог"
+language: ru-RU
+baseurl: ""
+url: "https://smarushchenko.github.io"
+
+# Сборка
+markdown: kramdown
+highlighter: rouge
+
+# Посты: /blog/:categories/:title/ с датой в title (как в стандарте Jekyll)
+# Jekyll по умолчанию использует :title как слаг из имени файла, дата остаётся в front matter.
+# Если хотите дату в URL, используйте :year/:month/:day — но вы просили "title с датой, как в стандарте".
+permalink: /blog/:categories/:title/
+
+show_excerpts: true
+
+# Исключения из сборки
+exclude:
+  - .devcontainer
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor
+  - dump-project.sh
+  - project-dump.txt

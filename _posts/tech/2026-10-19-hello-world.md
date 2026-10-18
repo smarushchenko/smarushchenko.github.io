@@ -1,11 +1,13 @@
 ---
-layout: default
+layout: post
 title: "Привет, мир!"
+date: 2025-12-01
+categories: [tech]
 ---
 
 # Привет, мир!
 
-[← На главную](/)
+[← На главную](/){: .tui-button }
 
 Это статья на чистом Markdown. Браузер сам отрендерит схему Mermaid:
 
@@ -15,7 +17,9 @@ title: "Привет, мир!"
         B --> C[Браузер читателя]
 </pre>
 
-<script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-    mermaid.initialize({ startOnLoad: true });
-</script>
+## Таблица
+
+| Колонка 1 | Колнка 2 | Колонка 3
+| --- | --- | --- |
+| 112 | dsfsdf | sdf| 0,5
+{: .tui-table .hovered-cyan}
